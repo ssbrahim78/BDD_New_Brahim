@@ -73,7 +73,6 @@ description : "Select the test suit using the corresponding Tag"
   
 string(defaultValue: '2', description: 'Implicitly wait time', name: 'ImplicitlyWaitTime')
   
-string(defaultValue: 'testkarim1980@gmail.com', description: 'email for notifications', name: 'notification_email')
 string(defaultValue: 'ssbrahimz1978@gmail.com', description: 'email for notifications', name: 'notification_email')
   
 }
