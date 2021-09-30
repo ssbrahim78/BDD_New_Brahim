@@ -103,10 +103,10 @@ ImplicitlyWaitTime =${ImplicitlyWaitTime}
 stage('Running the test suit'){
 steps{
             script {
-             def os = "${Os}"
-             if(os=="Windows"){bat(/mvn install -Dcucumber.filter.tags=${tag}/)
-             }else
-              {sh "mvn install -Dcucumber.filter.tags=${tag}"}
+             //def os = "${Os}"
+            // if(os=="Windows"){bat(/mvn install -Dcucumber.filter.tags=${tag}/)
+           //  }else
+            //  {sh "mvn install -Dcucumber.filter.tags=${tag}"}
               }
                //sh "mvn install -Dcucumber.filter.tags=${tag}"
                //bat(/mvn install -Dcucumber.filter.tags=${tag}/)
