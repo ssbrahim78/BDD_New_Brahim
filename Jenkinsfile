@@ -49,7 +49,7 @@ description : "Headless Browser ?"
 choice(name :'BrowserName', choices :[
 'Chrome',
 'Safari',
-'Fire Fox',
+'FireFox',
 'Internet Explorer',
 'All'
 ],
