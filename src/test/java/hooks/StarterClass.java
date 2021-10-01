@@ -15,9 +15,9 @@ import java.util.Properties;
 
 
 
-public  class hook extends Common {
+public  class StarterClass extends Common {
     public static AmazonHomePage amazonHomePage;
-    String PropertiesFilePath = "src/main/resources/config.properties";
+    String PropertiesFilePath = "config.properties";
     public static Properties prop;
     {
         try {
