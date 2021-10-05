@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="99.518">
+    <testcase classname="Amazon search box" name=": testing search box in amazon home page" time="47.554">
+        <system-out>
+            <![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "galaxy7"...................................................passed
+Then user should see a corespending "galaxy7"...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazon search box" name=": testing search box in amazon home page 2" time="25.098">
+        <system-out>
+            <![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "iphone 11".................................................passed
+Then user should see a corespending "galaxy7"...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazon search box" name=": testing search box in amazon home page 3" time="25.912">
+        <system-out>
+            <![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "battery"...................................................passed
+Then user should see a corespending "galaxy7"...............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

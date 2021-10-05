@@ -1,0 +1,323 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-05T19:30:35.794Z",
+        "before": [
+          {
+            "result": {
+              "duration": 29649907900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.StarterClass.setUp_Init()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": ": testing search box in amazon home page",
+        "description": "",
+        "id": "amazon-search-box;:-testing-search-box-in-amazon-home-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1682582700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.StarterClass.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2448192500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user lands to the Amazon home page",
+            "match": {
+              "location": "stepDefinitions.StepDf.the_user_lands_to_the_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13298644200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"galaxy7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"galaxy7\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.StepDf.user_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73485900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see a corespending \"galaxy7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"galaxy7\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDf.user_should_see_a_corespending(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@Amazon"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-05T19:31:23.388Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14883864600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.StarterClass.setUp_Init()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": ": testing search box in amazon home page",
+        "description": "",
+        "id": "amazon-search-box;:-testing-search-box-in-amazon-home-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1451455900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.StarterClass.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 467842400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user lands to the Amazon home page",
+            "match": {
+              "location": "stepDefinitions.StepDf.the_user_lands_to_the_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8263948400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"iphone 11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone 11\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.StepDf.user_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13992900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see a corespending \"galaxy7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"galaxy7\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDf.user_should_see_a_corespending(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@Amazon"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-05T19:31:48.505Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15459227800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.StarterClass.setUp_Init()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": ": testing search box in amazon home page",
+        "description": "",
+        "id": "amazon-search-box;:-testing-search-box-in-amazon-home-page;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1478662900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.StarterClass.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1844938700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user lands to the Amazon home page",
+            "match": {
+              "location": "stepDefinitions.StepDf.the_user_lands_to_the_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6982248100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"battery\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"battery\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.StepDf.user_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135923000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see a corespending \"galaxy7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"galaxy7\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDf.user_should_see_a_corespending(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@Amazon"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon search box",
+    "description": "",
+    "id": "amazon-search-box",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/Amazon.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@Amazon",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 20
+        }
+      }
+    ]
+  }
+]

@@ -11,4 +11,6 @@ public class AmazonHomePage extends Common {
     static final  String  SearchBoxButtonID="nav-search-submit-button";
     @FindBy(how= How.ID,using=SearchBoxButtonID)
     public static WebElement SearchBoxButton;
+
+
 }

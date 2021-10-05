@@ -2,29 +2,30 @@ pipeline {
 agent any
 parameters {
 choice(name :'TestingEnvironment', choices :[
-'STG',
-'DEV',
 'QA',
-'UI'
+'DEV',
+'STG',
+'UAT',
+'Production'
 ],
 description : "Select the Testing Environment"
 )
 
 choice(name :'UseCloudEnv', choices :[
-'True',
-'False'
+'False',
+'True'
 ],
 description : "Use Cloud Environment"
 )
 choice(name :'CloudEnvName', choices :[
-'browserstack',
-'saucelab'
+'Browserstack',
+'Saucelab'
 ],
 description : "Select the Cloud Environment"
 )
-  
-string(description: 'Entre the Url : ', defaultValue: 'https://www.amazon.com/', name: 'Url')
-  
+
+//string(description: 'Entre the Url : ', defaultValue: 'https://www.amazon.com/', name: 'Url')
+
 choice(description : "Select the Operating System: " ,name :'Os', choices :[
 'Mac',
 'Windows',
@@ -39,25 +40,27 @@ choice(description : "Select the OS Version:" ,name :'Os_version', choices :[
 'Windows 10'
 ]
 )
-choice(name :'Headless', choices :[
-'False',
-'True'
-],
-description : "Headless Browser ?"
-)
-  
+// choice(name :'Headless', choices :[
+// 'False',
+// 'True'
+// ],
+// description : "Headless Browser ?"
+// )
+
 choice(name :'BrowserName', choices :[
 'Chrome',
 'Safari',
-'FireFox',
-'Internet Explorer',
+'Firefox',
+'IE',
+'Edge',
+'chrome-options',
 'All'
 ],
 description : "Select the Browser"
 )
-  
+
 string(defaultValue: '94', description: 'Browser Version', name: 'BrowserVersion')
-  
+
 choice(name :'tag', choices :[
 '@Amazon',
 '@regression',
@@ -70,11 +73,12 @@ choice(name :'tag', choices :[
 ],
 description : "Select the test suit using the corresponding Tag"
 )
-  
-string(defaultValue: '2', description: 'Implicitly wait time', name: 'ImplicitlyWaitTime')
-  
-string(defaultValue: 'ssbrahimz1978@gmail.com', description: 'email for notifications', name: 'notification_email')
-  
+
+string(defaultValue: '4', description: 'Implicitly wait time', name: 'ImplicitlyWaitTime')
+
+string(defaultValue: 'testkarim1980@gmail.com', description: 'email for notifications', name: 'notification_email')
+
+
 }
 stages {
 stage("Load Properties to configuration file"){
@@ -89,7 +93,6 @@ Os =${Os}
 Os_version =${Os_version}
 BrowserName =${BrowserName}
 BrowserVersion =${BrowserVersion}
-Url =${Url}
 ImplicitlyWaitTime =${ImplicitlyWaitTime}
 
                 """
@@ -103,7 +106,8 @@ stage('Running the test suit'){
 steps{
             script {
              def os = "${Os}"
-             if(os=="Windows"){bat(/mvn install -Dcucumber.filter.tags=${tag}/)
+             if(os=="Windows"){
+             bat(/mvn install -Dcucumber.filter.tags=${tag}/)
              }else
               {sh "mvn install -Dcucumber.filter.tags=${tag}"}
               }
